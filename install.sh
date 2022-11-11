@@ -34,6 +34,7 @@ make install &&
 cd ../..)
 ) &&
 
+go env -w GO111MODULE=off ##added by s3kk
 go get github.com/EgeBalci/sgn &&
 
 (ls wclang 2>/dev/null 1>&2 || (git clone --depth 1 https://github.com/tpoechtrager/wclang.git &&
